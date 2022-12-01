@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-12-01T12:08:04 IST" name="Default suite" finished-at="2022-12-01T12:09:19 IST" duration-ms="74691">
+    <groups>
+    </groups>
+    <test started-at="2022-12-01T12:08:04 IST" name="Default test" finished-at="2022-12-01T12:09:19 IST" duration-ms="74691">
+      <class name="aa.admission.PreAdmissionTest">
+        <test-method is-config="true" signature="open()[pri:0, instance:aa.admission.PreAdmissionTest@18df8434]" started-at="2022-12-01T12:08:04 IST" name="open" finished-at="2022-12-01T12:08:10 IST" duration-ms="5610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open -->
+        <test-method signature="create_Preadmission()[pri:0, instance:aa.admission.PreAdmissionTest@18df8434]" started-at="2022-12-01T12:08:10 IST" name="create_Preadmission" finished-at="2022-12-01T12:08:35 IST" duration-ms="25761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- create_Preadmission -->
+        <test-method signature="status_Update()[pri:1, instance:aa.admission.PreAdmissionTest@18df8434]" started-at="2022-12-01T12:08:35 IST" name="status_Update" finished-at="2022-12-01T12:08:51 IST" duration-ms="15704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- status_Update -->
+        <test-method signature="updated_Mainadmission()[pri:2, instance:aa.admission.PreAdmissionTest@18df8434]" started-at="2022-12-01T12:08:51 IST" name="updated_Mainadmission" finished-at="2022-12-01T12:09:07 IST" duration-ms="16331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updated_Mainadmission -->
+        <test-method signature="section_Allocation()[pri:3, instance:aa.admission.PreAdmissionTest@18df8434]" started-at="2022-12-01T12:09:07 IST" name="section_Allocation" finished-at="2022-12-01T12:09:19 IST" duration-ms="11262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- section_Allocation -->
+      </class> <!-- aa.admission.PreAdmissionTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
