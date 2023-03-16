@@ -1,6 +1,8 @@
 package ab.sectionallocationTest;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.StringWriter;
 
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -34,9 +36,14 @@ public class SectionAllocationTest extends Baseclass{
 
 
 	@AfterMethod
-	private void driverClose(ITestResult result) throws Exception {
-
-		failedMethodTakesscreenshot(result);
+	private void driverClose(ITestResult result) {
+		try {
+			failedMethodTakesscreenshot(result);
+		} catch (Exception e1) {
+			// TODO Auto-generated catch block
+			excelWriteData("Exception", e1.toString());
+			e1.printStackTrace();
+		}
 //		browserClose();
 	}
 }

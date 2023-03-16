@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="aa.admission.PreAdmissionTest">
+      <class name="ab.sectionallocationTest.SectionAllocationTest">
         <methods>
-          <include name="updated_Mainadmission"/>
-          <include name="section_Allocation"/>
-          <include name="status_Update"/>
+          <include name="Session"/>
           <include name="open"/>
-          <include name="create_Preadmission"/>
+          <include name="driverClose"/>
         </methods>
-      </class> <!-- aa.admission.PreAdmissionTest -->
+      </class> <!-- ab.sectionallocationTest.SectionAllocationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

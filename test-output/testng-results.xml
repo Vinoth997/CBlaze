@@ -1,33 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-01T12:08:04 IST" name="Default suite" finished-at="2022-12-01T12:09:19 IST" duration-ms="74691">
+  <suite started-at="2022-12-03T19:12:48 IST" name="Default suite" finished-at="2022-12-03T19:13:28 IST" duration-ms="39366">
     <groups>
     </groups>
-    <test started-at="2022-12-01T12:08:04 IST" name="Default test" finished-at="2022-12-01T12:09:19 IST" duration-ms="74691">
-      <class name="aa.admission.PreAdmissionTest">
-        <test-method is-config="true" signature="open()[pri:0, instance:aa.admission.PreAdmissionTest@18df8434]" started-at="2022-12-01T12:08:04 IST" name="open" finished-at="2022-12-01T12:08:10 IST" duration-ms="5610" status="PASS">
+    <test started-at="2022-12-03T19:12:48 IST" name="Default test" finished-at="2022-12-03T19:13:28 IST" duration-ms="39366">
+      <class name="ab.sectionallocationTest.SectionAllocationTest">
+        <test-method is-config="true" signature="open()[pri:0, instance:ab.sectionallocationTest.SectionAllocationTest@6cf0e0ba]" started-at="2022-12-03T19:12:48 IST" name="open" finished-at="2022-12-03T19:12:54 IST" duration-ms="5471" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- open -->
-        <test-method signature="create_Preadmission()[pri:0, instance:aa.admission.PreAdmissionTest@18df8434]" started-at="2022-12-01T12:08:10 IST" name="create_Preadmission" finished-at="2022-12-01T12:08:35 IST" duration-ms="25761" status="PASS">
+        <test-method signature="Session()[pri:0, instance:ab.sectionallocationTest.SectionAllocationTest@6cf0e0ba]" started-at="2022-12-03T19:12:54 IST" name="Session" finished-at="2022-12-03T19:13:28 IST" duration-ms="33701" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"(//span[contains(text(),'VV1223')])[1]"}
+  (Session info: chrome=107.0.5304.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-MC7UQM0', ip: '192.168.0.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [125bd314c8b13aeae0f29b717f8f162d, findElement {using=xpath, value=(//span[contains(text(),'VV1223')])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52173}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52173/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 125bd314c8b13aeae0f29b717f8f162d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[contains(text(),'VV1223')])[1]"}
+  (Session info: chrome=107.0.5304.107)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0', revision: '3a21814679'
+System info: host: 'DESKTOP-MC7UQM0', ip: '192.168.0.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [125bd314c8b13aeae0f29b717f8f162d, findElement {using=xpath, value=(//span[contains(text(),'VV1223')])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52173}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52173/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 125bd314c8b13aeae0f29b717f8f162d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+at ab.sectionAllocation.SectionAllocation.selectstudent(SectionAllocation.java:60)
+at ab.sectionAllocation.SectionAllocation.newSectionAllocation(SectionAllocation.java:79)
+at ab.sectionallocationTest.SectionAllocationTest.Session(SectionAllocationTest.java:33)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- create_Preadmission -->
-        <test-method signature="status_Update()[pri:1, instance:aa.admission.PreAdmissionTest@18df8434]" started-at="2022-12-01T12:08:35 IST" name="status_Update" finished-at="2022-12-01T12:08:51 IST" duration-ms="15704" status="PASS">
+        </test-method> <!-- Session -->
+        <test-method is-config="true" signature="driverClose(org.testng.ITestResult)[pri:0, instance:ab.sectionallocationTest.SectionAllocationTest@6cf0e0ba]" started-at="2022-12-03T19:13:28 IST" name="driverClose" finished-at="2022-12-03T19:13:28 IST" duration-ms="172" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Session status=FAILURE method=SectionAllocationTest.Session()[pri:0, instance:ab.sectionallocationTest.SectionAllocationTest@6cf0e0ba] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- status_Update -->
-        <test-method signature="updated_Mainadmission()[pri:2, instance:aa.admission.PreAdmissionTest@18df8434]" started-at="2022-12-01T12:08:51 IST" name="updated_Mainadmission" finished-at="2022-12-01T12:09:07 IST" duration-ms="16331" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updated_Mainadmission -->
-        <test-method signature="section_Allocation()[pri:3, instance:aa.admission.PreAdmissionTest@18df8434]" started-at="2022-12-01T12:09:07 IST" name="section_Allocation" finished-at="2022-12-01T12:09:19 IST" duration-ms="11262" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- section_Allocation -->
-      </class> <!-- aa.admission.PreAdmissionTest -->
+        </test-method> <!-- driverClose -->
+      </class> <!-- ab.sectionallocationTest.SectionAllocationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

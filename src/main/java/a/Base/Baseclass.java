@@ -2,17 +2,23 @@ package a.Base;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
+
 import org.apache.commons.io.FileUtils;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -125,7 +131,7 @@ public class Baseclass {
 
 	public static String excelGetdata(String sheetName, int rowNum, int cellNum) throws IOException {
 
-		File file = new File("C:\\Users\\Admin\\eclipse-workspace\\SMS\\ExcelSheet\\sms.xlsx");
+		File file = new File("D:\\CBlaze-Automation\\sms\\ExcelSheet\\sms.xlsx");
 
 		FileInputStream inputStream = new FileInputStream(file);
 
@@ -160,6 +166,65 @@ public class Baseclass {
 		FileOutputStream opstream = new FileOutputStream(file);
 		book.write(opstream);
 
+	}
+	
+	@SuppressWarnings("resource")
+	public static void excelWriteData(String sheetName,String valueOne) {
+		//Create blank workbook
+	      XSSFWorkbook workbook = null;
+	      XSSFSheet spreadsheet = null;
+	      
+	      //Create a blank sheet
+	       //workbook.getSheet(sheetName);
+	      	      
+	      File file = new File("D:\\CBlaze-Automation\\sms\\ExcelSheet\\sms.xlsx");
+	      try {
+	      FileInputStream fis = new FileInputStream(file);
+	      workbook = new XSSFWorkbook(fis);
+	      spreadsheet = workbook.getSheet(sheetName);
+	      
+	      spreadsheet.getRow(0).getCell(0).setCellValue(valueOne);
+	      FileOutputStream fos = new FileOutputStream(file);
+	      workbook.write(fos);
+	      fos.close();
+	      }catch(Exception e1) {
+	    	  e1.printStackTrace();
+	      }
+	      
+	      
+	      
+
+	      //Create row object
+//	      XSSFRow row;
+//
+//	      //This data needs to be written (Object[])
+//	      Map < String, Object[] > empinfo = new TreeMap < String, Object[] >();
+////	      empinfo.put( "1", new Object[] {
+////	         "EMP ID", "EMP NAME", "DESIGNATION" });
+//	      
+//	      empinfo.put( sheetName, new Object[] {
+//	 	         valueOne });
+//
+//	      //Iterate over data and write to sheet
+//	      Set < String > keyid = empinfo.keySet();
+//	      int rowid = 0;
+//	      
+//	      for (String key : keyid) {
+//	         row = spreadsheet.createRow(rowid++);
+//	         Object [] objectArr = empinfo.get(key);
+//	         int cellid = 0;
+//	         
+//	         for (Object obj : objectArr){
+//	            Cell cell = row.createCell(cellid++);
+//	            cell.setCellValue((String)obj);
+//	         }
+//	      }
+//	      //Write the workbook in file system
+//	      FileOutputStream out = new FileOutputStream(
+//	         new File("D:\\CBlaze-Automation\\sms\\ExcelSheet\\sms.xlsx"));
+//	      
+//	      workbook.write(out);
+//	      out.close();
 	}
 
 	public static void mouseoveractions(WebElement target) {
